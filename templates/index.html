@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="ja">
+    <head>
+            <meta charset="utf-8">
+            <title>OwlDotImageMaker</title>
+            <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+    <form method="post" action="/send" enctype="multipart/form-data">
+      <p class="un"><font size="6">OwlDotImageMaker</font></p>
+      <div class="uploadButton">
+        画像ファイルを選択してください
+        <input align="center" type="file" id="img_file" name="img_file"  accept="image/*" class="col-sm-4" onchange="uv.style.display='inline-block'; uv.value = this.value;" >
+        <input type="text" id="uv" class="uploadValue" disabled />
+
+    </div>
+    <div align="center" style="color:white;"><font size="6">ブロックのサイズを選んでください</font></div>
+    <select id="selected" name="selected" align="center" class = "selectobj">
+      <option value="4">4x4</option>
+      <option value="8">8x8</option>
+      <option value="16">16x16</option>
+      <option value="32">32x32</option>
+      <option value="64">64x64</option>
+      <option value="128">128x128</option>
+      </select>
+    <button class="button3" align="center" type="text" name="submit">Process</button>
+    
+  </form>
+  <p class="bigtitle" align="center"><font size="10">{{before}}</font></p>
+  {% if beforefilename %}
+  <div style="display: flex; justify-content: center;">
+    <center><img src="/static/uploads/{{beforefilename}}" style="width: 700px; height: 700px;"></center>
+  </div>
+  {% else %}
+    <p class="bigtitle" align="center">no image</p>
+  {% endif %}
+  <p class="bigtitle" align="center"><font size="10">{{after}}</font></p>
+  {% if afterfilename %}
+  <div style="display: flex; justify-content: center;">
+    <center><img src="/static/uploads/{{afterfilename}}" style="width: 700px; height: 700px;"></center>
+  </div>
+  {% else %}
+    <p class="bigtitle" align="center">no image</p>
+  {% endif %}
+
+   </html>
