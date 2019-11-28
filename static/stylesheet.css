@@ -21,54 +21,7 @@ body {
     padding:0px;
   }
   
-  .header {
-    background-color: #000000;
-    color: azure;
-    margin: 0px;
-    height: 62px;
-    padding: 0px;
-  }
   
-  /* header-logoの文字の大きさを36px、floatプロパティをleftにしてください */
-  .header-logo{
-    font-size:36px;
-    color: azure;
-    float:left;
-    padding-bottom: 0px;
-    
-  }
-  
-  button.button1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-style: none;
-    color: azure;
-    background-color: black;
-
-
-  }
-
-  button.button2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-style: none;
-    color: azure;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 15px;
-    background-color: green;
-    display: block;
-    width: 100%;
-    border-radius:5em;
-
-
-
-  }
-
   button.button3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.4em;
@@ -87,73 +40,6 @@ body {
 
   }
 
-  button.button4 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-style: none;
-    color: azure;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 15px;
-    background-color: green;
-    border-radius:5em;
-    left: 50%;
-
-
-
-  }
-
-  button.button5 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 3.0em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-style: none;
-    color: azure;
-    display: block;
-    width: 100%;
-    background-color: blue;
-  }
-
-  button.button6 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-style: none;
-    color: azure;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 15px;
-    background-color: yellowgreen;
-    display: block;
-    width: 100%;
-
-
-
-  }
-
-  button.button7 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-style: none;
-    color: black;
-    margin-left: 5px;
-    margin-right: 15px;
-    background-color: yellow;
-    display: block;
-    width: 100%;
-
-
-
-  }
-
-
-
   .un {
     font-size: 1.4em;
     font-weight: bold;
@@ -164,74 +50,6 @@ body {
     
   }
 
-  .input {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 28px;
-    border-style: none;
-    color: black;
-    background-color: azure;
-    border-radius:5em;
-    text-align: center;
-    left: 50%;
-  }
-
-  .inputtitle{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 28px;
-    border-style: none;
-    color: black;
-    background-color: azure;
-    border-radius:5em;
-    text-align: center;
-    left: 50%;
-    display: block;
-    width: 100%;
-  }
-
-  textarea{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 15px 28px;
-    border-style: none;
-    color: black;
-    background-color: azure;
-    border-radius:2em;
-    left: 50%;
-    display: block;
-    width: 100%;
-  }
-
-
-  .sign {
-    padding-top: 40px;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.bigtitle{
-  color: white;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-  .main {
-    
-  }
-
-  .loginpage {
-    color: white;
-    display: block;
-    height: 100%;
-  }
-  
   .container {
     display: block;
     color: white;
@@ -333,6 +151,7 @@ body {
     cursor:pointer;
     opacity:0;
 }
+
 .uploadValue {
     display:none;
     background:rgba(255,255,255,0.2);
